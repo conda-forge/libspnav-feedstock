@@ -8,9 +8,11 @@ package:
 source:
   url: https://github.com/FreeSpacenav/libspnav/releases/download/libspnav-{{ version }}/libspnav-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - disable_warning.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
