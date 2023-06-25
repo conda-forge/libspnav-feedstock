@@ -1,18 +1,18 @@
-{% set version = "0.2.3" %}
-{% set sha256 = "7ae4d7bb7f6a5dda28b487891e01accc856311440f582299760dace6ee5f1f93" %}
+{% set version = "1.1" %}
+{% set sha256 = "04b297f68a10db4fa40edf68d7f823ba7b9d0442f2b665181889abe2cea42759" %}
 
 package:
   name: libspnav
   version: {{ version }}
 
 source:
-  url: https://github.com/FreeSpacenav/libspnav/releases/download/libspnav-{{ version }}/libspnav-{{ version }}.tar.gz
+  url: https://github.com/FreeSpacenav/libspnav/releases/download/v{{ version }}/libspnav-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
     - disable_warning.patch
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
 
 requirements:
