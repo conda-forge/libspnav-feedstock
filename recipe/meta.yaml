@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/FreeSpacenav/libspnav/releases/download/v{{ version }}/libspnav-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - disable_warning.patch
 
 build:
   number: 0
