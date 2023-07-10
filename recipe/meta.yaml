@@ -22,7 +22,7 @@ requirements:
     - m4
     - make  # [unix]
   host:
-    - xorg-libx11
+    - xorg-libx11 =1.8.4
   run:
     - xorg-libx11
 
